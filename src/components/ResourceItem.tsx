@@ -1,5 +1,6 @@
 import React from 'react';
 import { Resource } from '../types';
+import '../spritesheets/icons.css';
 import './ResourceItem.css';
 
 interface ResourceItemProps {
@@ -23,6 +24,13 @@ export const ResourceItem: React.FC<ResourceItemProps> = ({
 }) => {
   return (
     <div className="resource-item">
+      {resource.icon && (
+        <div
+          className="resource-item__icon"
+          data-icon={resource.icon}
+          title={resource.name}
+        />
+      )}
       <div className="resource-item__label">{resource.name}</div>
       <div className="resource-item__controls">
         <button

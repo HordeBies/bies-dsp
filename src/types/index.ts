@@ -1,6 +1,7 @@
 export interface Resource {
   id: string;
   name: string;
+  icon?: string;
 }
 
 export interface ResourceData {
