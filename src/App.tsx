@@ -2,6 +2,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { ResourceList } from './components/ResourceList';
 import { useLocalStorage } from './hooks/useLocalStorage';
 import { Resource, ResourceData } from './types';
+import resourceData from './data.json';
 import './App.css';
 
 export const App: React.FC = () => {
@@ -12,27 +13,18 @@ export const App: React.FC = () => {
 
   // Load data.json on mount
   useEffect(() => {
-    const loadData = async () => {
-      try {
-        const response = await fetch('/src/data.json');
-        if (!response.ok) {
-          throw new Error(`Failed to load data.json: ${response.statusText}`);
-        }
-        const data: ResourceData = await response.json();
-        setResources(data.resources || []);
-        setError(null);
-      } catch (err) {
-        const errorMessage =
-          err instanceof Error ? err.message : 'Unknown error';
-        console.error('Error loading data.json:', errorMessage);
-        setError(errorMessage);
-        setResources([]);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    loadData();
+    try {
+      const data: ResourceData = resourceData;
+      setResources(data.resources || []);
+      setError(null);
+    } catch (err) {
+      const errorMessage = err instanceof Error ? err.message : 'Unknown error';
+      console.error('Error loading data.json:', errorMessage);
+      setError(errorMessage);
+      setResources([]);
+    } finally {
+      setLoading(false);
+    }
   }, []);
 
   const handleCountChange = useCallback(
