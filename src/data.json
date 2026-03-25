@@ -8,77 +8,77 @@
     {
       "id": "copper-ore",
       "name": "Copper Ore",
-      "icon": "item.1001"
+      "icon": "item.1002"
     },
     {
       "id": "stone",
       "name": "Stone",
-      "icon": "item.1001"
+      "icon": "item.1005"
     },
     {
       "id": "coal",
       "name": "Coal",
-      "icon": "item.1001"
+      "icon": "item.1006"
     },
     {
       "id": "silicon-ore",
       "name": "Silicon Ore",
-      "icon": "item.1001"
+      "icon": "item.1003"
     },
     {
       "id": "titanium-ore",
       "name": "Titanium Ore",
-      "icon": "item.1001"
+      "icon": "item.1004"
     },
     {
       "id": "water",
       "name": "Water",
-      "icon": "item.1001"
+      "icon": "item.1000"
     },
     {
       "id": "crude-oil",
       "name": "Crude Oil",
-      "icon": "item.1001"
+      "icon": "item.1007"
     },
     {
       "id": "sulfuric-acid",
       "name": "Sulfuric Acid",
-      "icon": "item.1001"
+      "icon": "item.1116"
     },
     {
       "id": "organic-crystal",
       "name": "Organic Crystal",
-      "icon": "item.1001"
+      "icon": "item.1117"
     },
     {
       "id": "kimberlite-ore",
       "name": "Kimberlite Ore",
-      "icon": "item.1001"
+      "icon": "item.1012"
     },
     {
       "id": "fractal-silicon",
       "name": "Fractal Silicon",
-      "icon": "item.1001"
+      "icon": "item.1013"
     },
     {
       "id": "grating-crystal",
       "name": "Grating Crystal",
-      "icon": "item.1001"
+      "icon": "item.1014"
     },
     {
       "id": "stalagmite-crystal",
       "name": "Stalagmite Crystal",
-      "icon": "item.1001"
+      "icon": "item.1015"
     },
     {
       "id": "unipolar-magnet",
       "name": "Unipolar Magnet",
-      "icon": "item.1001"
+      "icon": "item.1016"
     },
     {
       "id": "fire-ice",
       "name": "Fire Ice",
-      "icon": "item.1001"
+      "icon": "item.1011"
     }
   ]
 }
