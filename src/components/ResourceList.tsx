@@ -1,5 +1,5 @@
 import React, { useCallback } from 'react';
-import { Resource, ResourceCounts } from '@types/index';
+import { Resource, ResourceCounts } from '../types';
 import { ResourceItem } from './ResourceItem';
 import './ResourceList.css';
 

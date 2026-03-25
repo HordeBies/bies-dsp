@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { ResourceList } from './components/ResourceList';
 import { useLocalStorage } from './hooks/useLocalStorage';
-import { Resource, ResourceData, ResourceCounts } from './types';
+import { Resource, ResourceData } from './types';
 import './App.css';
 
 export const App: React.FC = () => {
