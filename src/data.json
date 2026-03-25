@@ -1,0 +1,84 @@
+{
+  "resources": [
+    {
+      "id": "iron-ore",
+      "name": "Iron Ore",
+      "icon": "item.1001"
+    },
+    {
+      "id": "copper-ore",
+      "name": "Copper Ore",
+      "icon": "item.1001"
+    },
+    {
+      "id": "stone",
+      "name": "Stone",
+      "icon": "item.1001"
+    },
+    {
+      "id": "coal",
+      "name": "Coal",
+      "icon": "item.1001"
+    },
+    {
+      "id": "silicon-ore",
+      "name": "Silicon Ore",
+      "icon": "item.1001"
+    },
+    {
+      "id": "titanium-ore",
+      "name": "Titanium Ore",
+      "icon": "item.1001"
+    },
+    {
+      "id": "water",
+      "name": "Water",
+      "icon": "item.1001"
+    },
+    {
+      "id": "crude-oil",
+      "name": "Crude Oil",
+      "icon": "item.1001"
+    },
+    {
+      "id": "sulfuric-acid",
+      "name": "Sulfuric Acid",
+      "icon": "item.1001"
+    },
+    {
+      "id": "organic-crystal",
+      "name": "Organic Crystal",
+      "icon": "item.1001"
+    },
+    {
+      "id": "kimberlite-ore",
+      "name": "Kimberlite Ore",
+      "icon": "item.1001"
+    },
+    {
+      "id": "fractal-silicon",
+      "name": "Fractal Silicon",
+      "icon": "item.1001"
+    },
+    {
+      "id": "grating-crystal",
+      "name": "Grating Crystal",
+      "icon": "item.1001"
+    },
+    {
+      "id": "stalagmite-crystal",
+      "name": "Stalagmite Crystal",
+      "icon": "item.1001"
+    },
+    {
+      "id": "unipolar-magnet",
+      "name": "Unipolar Magnet",
+      "icon": "item.1001"
+    },
+    {
+      "id": "fire-ice",
+      "name": "Fire Ice",
+      "icon": "item.1001"
+    }
+  ]
+}

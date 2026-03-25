@@ -1,0 +1,275 @@
+/* ============================================
+   DSP Resource Counter - Global Styles
+   Theme: Cyberpunk/Futuristic (DSP UI Inspired)
+   Color System: LCH (perceptually uniform)
+   ============================================ */
+
+/* CSS Reset & Custom Properties */
+:root {
+  /* Primary Neon Colors (LCH format with hex fallbacks) */
+  --neon-white: lch(100 0 0 / 0.76);
+  --neon-cyan: lch(88 36.65 209.6 / 0.78);
+  --neon-blue: lch(87 21.33 249.3 / 0.77);
+  --neon-green: lch(89 78.97 147.57 / 0.83);
+  --neon-yellow: lch(97 79.89 103.3 / 0.76);
+  --neon-red: lch(75 45.02 40.39 / 0.78);
+  --neon-orange: lch(84 44.1 74.07);
+  --neon-purple: lch(67 74.83 318.61 / 0.85);
+
+  /* Fallback Hex Values */
+  --color-white: #ffffff;
+  --color-cyan: #00ffff;
+  --color-blue: #0099ff;
+  --color-pink: #ff00ff;
+  --color-red: #ff1493;
+
+  /* Background Colors */
+  --bg-primary: #1a0033;
+  --bg-secondary: #2d0052;
+  --bg-tertiary: #0a0015;
+  --bg-hover: rgba(0, 255, 255, 0.08);
+
+  /* Text Colors */
+  --text-primary: #e0e0e0;
+  --text-secondary: #b0b0b0;
+  --text-heading: #ffffff;
+  --text-accent: #00ffff;
+
+  /* Effects */
+  --glow-cyan: 0 0 8px rgba(0, 255, 255, 0.6);
+  --glow-pink: 0 0 8px rgba(255, 0, 255, 0.6);
+  --glow-strong: 0 0 12px #00ffff;
+  --grid-overlay: rgba(0, 255, 255, 0.1);
+
+  /* Spacing */
+  --spacing-xs: 0.375rem;
+  --spacing-sm: 0.625rem;
+  --spacing-md: 1.25rem;
+  --spacing-lg: 1.875rem;
+  --spacing-xl: 2.5rem;
+
+  /* Border Radius */
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 8px;
+
+  /* Transitions */
+  --transition-fast: 150ms ease-in-out;
+  --transition-normal: 300ms ease-in-out;
+
+  /* Font Stack */
+  --font-mono: 'JetBrains Mono', 'SF Mono', 'Monaco', 'Courier New', monospace;
+  --font-sans: system-ui, -apple-system, sans-serif;
+
+  /* Font Sizes */
+  --font-xs: 0.875rem;
+  --font-sm: 1rem;
+  --font-base: 1.125rem;
+  --font-lg: 1.375rem;
+  --font-xl: 1.875rem;
+  --font-2xl: 2.5rem;
+
+  /* Conservative viewport-responsive scaling */
+  --scale-spacing: clamp(0.5rem, 0.6vw, 1.2rem);
+  --scale-spacing-lg: clamp(0.7rem, 0.8vw, 1.5rem);
+  --scale-font-base: clamp(0.9rem, 1vw, 1.2rem);
+  --scale-font-lg: clamp(1rem, 1.2vw, 1.4rem);
+  --scale-font-xl: clamp(1.1rem, 1.3vw, 1.6rem);
+  --scale-font-2xl: clamp(1.3rem, 1.5vw, 1.8rem);
+}
+
+/* Fine-tune for 1080p displays */
+@media (max-height: 1200px) {
+  :root {
+    --scale-spacing: clamp(0.4rem, 0.5vw, 0.9rem);
+    --scale-spacing-lg: clamp(0.6rem, 0.7vw, 1.1rem);
+    --scale-font-base: clamp(0.75rem, 0.85vw, 1rem);
+    --scale-font-lg: clamp(0.85rem, 1vw, 1.15rem);
+    --scale-font-xl: clamp(0.95rem, 1.1vw, 1.35rem);
+    --scale-font-2xl: clamp(1.1rem, 1.3vw, 1.5rem);
+  }
+}
+
+/* Fine-tune for 2K displays */
+@media (min-height: 1400px) {
+  :root {
+    --scale-spacing: clamp(0.6rem, 0.7vw, 1.3rem);
+    --scale-spacing-lg: clamp(0.8rem, 0.9vw, 1.6rem);
+    --scale-font-base: clamp(1rem, 1.1vw, 1.3rem);
+    --scale-font-lg: clamp(1.1rem, 1.3vw, 1.5rem);
+    --scale-font-xl: clamp(1.2rem, 1.4vw, 1.7rem);
+    --scale-font-2xl: clamp(1.4rem, 1.6vw, 1.9rem);
+  }
+}
+
+/* Global Resets */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-mono);
+  font-size: var(--font-base);
+  font-weight: 300;
+  line-height: 1.6;
+  color: var(--text-primary);
+  background: linear-gradient(
+    135deg,
+    var(--bg-primary) 0%,
+    var(--bg-secondary) 100%
+  );
+  background-attachment: fixed;
+  min-height: 100vh;
+  letter-spacing: 0.5px;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  color: var(--text-heading);
+  letter-spacing: 1px;
+  text-shadow: var(--glow-cyan);
+}
+
+h1 {
+  font-size: var(--font-2xl);
+}
+
+h2 {
+  font-size: var(--font-xl);
+}
+
+p {
+  margin-bottom: var(--spacing-md);
+}
+
+/* Links */
+a {
+  color: var(--text-accent);
+  text-decoration: none;
+  transition: text-shadow var(--transition-fast);
+}
+
+a:hover {
+  text-shadow: var(--glow-strong);
+}
+
+/* Lists */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Form Elements */
+input,
+button,
+select,
+textarea {
+  font-family: var(--font-mono);
+  font-size: var(--font-base);
+  color: var(--text-primary);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* Focus Styles */
+button:focus-visible,
+input:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--color-cyan);
+  outline-offset: 2px;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-cyan);
+  border-radius: var(--radius-md);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-blue);
+  box-shadow: var(--glow-strong);
+}
+
+/* Selection */
+::selection {
+  background: var(--color-cyan);
+  color: var(--bg-primary);
+}
+
+/* Loading Animation */
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes glow {
+  0%,
+  100% {
+    text-shadow: var(--glow-cyan);
+  }
+  50% {
+    text-shadow: var(--glow-strong);
+  }
+}
+
+@keyframes grid-shift {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 20px 20px;
+  }
+}
+
+/* Utility Classes */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.pulse {
+  animation: pulse var(--transition-normal) infinite;
+}
+
+.glow {
+  animation: glow var(--transition-normal) infinite;
+}
