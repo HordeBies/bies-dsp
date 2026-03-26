@@ -244,15 +244,6 @@ a:focus-visible {
   }
 }
 
-@keyframes grid-shift {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 20px 20px;
-  }
-}
-
 /* Utility Classes */
 .sr-only {
   position: absolute;
